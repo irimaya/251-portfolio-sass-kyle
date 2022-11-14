@@ -7,9 +7,9 @@
 
 html,
 body {
-  font-family: "Montserrat", sans-serif;
   background: #000;
   color: #fff;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -41,8 +41,8 @@ a {
 .container {
   margin: auto;
   max-width: 1300px;
-  overflow: auto;
   padding: 0 20px;
+  overflow: auto;
 }
 
 .large {
@@ -58,7 +58,6 @@ a {
 .btn {
   display: inline-block;
   text-align: center;
-  font-size: 15px;
   padding: 12px 23px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -68,7 +67,7 @@ a {
 .btn-color {
   background: #e8ca50;
   color: #fff;
-  border: 1px solid #e8ca50;
+  border: none;
 }
 
 form label {
@@ -82,7 +81,6 @@ form .form-control {
   width: 100%;
   padding: 7px 12px;
   line-height: 1.5;
-  background-color: #fff;
   border: none;
   border-radius: 4px;
 }
@@ -103,14 +101,8 @@ form button {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-#navbar img {
-  height: 60px;
-}
-#navbar a {
-  font-weight: 500;
-}
 #navbar .logo {
-  padding-top: 16px;
+  padding-top: 10px;
   font-size: 22px;
   font-weight: 400;
   text-transform: uppercase;
@@ -197,7 +189,7 @@ form button {
 #work .work-flex-box {
   padding: 20px;
 }
-#work .work-flex-box img {
+#work .work-flex img {
   width: 100%;
 }
 
