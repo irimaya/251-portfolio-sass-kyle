@@ -10,12 +10,11 @@ $primary-color: #e8ca50;
 	box-sizing: border-box;
 }
 
-// Main Style
 html,
 body {
+	font-family: $font-stack;
 	background: #000;
 	color: #fff;
-	font-family: $font-stack;
 }
 
 h1 {
@@ -48,8 +47,8 @@ a {
 .container {
 	margin: auto;
 	max-width: 1300px;
-	padding: 0 20px;
 	overflow: auto;
+	padding: 0 20px;
 }
 
 .large {
@@ -65,6 +64,7 @@ a {
 .btn {
 	display: inline-block;
 	text-align: center;
+	font-size: 15px;
 	padding: 12px 23px;
 	font-weight: bold;
 	letter-spacing: 1px;
@@ -73,7 +73,7 @@ a {
 	&-color {
 		background: $primary-color;
 		color: #fff;
-		border: none;
+		border: 1px solid $primary-color;
 	}
 } //End .btn
 
@@ -89,13 +89,14 @@ form {
 		width: 100%;
 		padding: 7px 12px;
 		line-height: 1.5;
+		background-color: #fff;
 		border: none;
 		border-radius: 4px;
 	}
 	button {
 		width: 100%;
 	}
-} //End form
+} // form
 
 // Mainheader
 #mainheader {
@@ -111,8 +112,14 @@ form {
 	overflow: auto;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	img {
+		height: 60px;
+	}
+	a {
+		font-weight: 500;
+	}
 	.logo {
-		padding-top: 10px;
+		padding-top: 16px;
 		font-size: 22px;
 		font-weight: 400;
 		text-transform: uppercase;
@@ -145,14 +152,14 @@ form {
 		.showcase-text {
 			padding-top: 150px;
 		}
-	}
+	} //End #showcase .title
 } //End #showcase
 
 // About
 #about {
 	padding: 80px 0;
 	text-align: center;
-}
+} //End #about
 
 // Features
 #features {
@@ -169,8 +176,8 @@ form {
 			p:last-child {
 				color: $primary-color;
 			}
-		}
-	} // #features .container
+		} //End #features .festures-box
+	} //End #features .container
 } //End #features
 
 // Services
@@ -189,8 +196,8 @@ form {
 			h4 {
 				padding-bottom: 10px;
 			}
-		}
-	} // #services .services-flex
+		} //End #services .services-flex-box
+	} // End #serrvices .services-flex
 } //End #services
 
 // Work
@@ -204,11 +211,11 @@ form {
 		gap: 10px;
 		&-box {
 			padding: 20px;
-		}
-		img {
-			width: 100%;
-		}
-	}
+			img {
+				width: 100%;
+			}
+		} //End #work .work-flex-box
+	} //End #work .work-flex
 } //End #work
 
 // Contact
@@ -222,7 +229,7 @@ form {
 		width: 50%;
 		margin: 0 auto;
 	}
-} //End #contact
+} // End #contact
 
 // Footer
 #mainfooter {
